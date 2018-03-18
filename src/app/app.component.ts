@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+  ngOnInit (){
+    this.get_location();
+  }
 
   get_location() {
     navigator.geolocation.getCurrentPosition(this.mostra_location);
@@ -15,8 +18,8 @@ export class AppComponent {
   mostra_location (posicao) {
     console.log(posicao);
 
-    this.title = `Latitude: ${posicao.coords.latitude} e Longitude ${posicao.coords.longitude}`;
-    alert(this.title);//JSON.stringify(posicao) +
+    let title = `A sua localização é \nLatitude: ${posicao.coords.latitude} e Longitude ${posicao.coords.longitude}`;
+    alert(title);
   }
 
 }
