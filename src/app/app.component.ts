@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  ngOnInit (){
+  ngOnInit() {
     this.get_location();
   }
 
@@ -15,11 +15,12 @@ export class AppComponent {
     navigator.geolocation.getCurrentPosition(this.mostra_location);
   }
 
-  mostra_location (posicao) {
+  mostra_location(posicao) {
     console.log(posicao);
 
     let title = `A sua localização é \nLatitude: ${posicao.coords.latitude} e Longitude ${posicao.coords.longitude}`;
     alert(title);
+
   }
 
 }
