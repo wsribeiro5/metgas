@@ -1,13 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { RevendedoresComponent } from './revendedores.component';
+import { CadastrarRevendedoresComponent } from './cad-revendedores/cadastrar-revendedores.component';
+
+
+
 
 @NgModule({
   imports: [
-    CommonModule,
-    RevendedoresComponent
+    CommonModule
   ],
-  declarations: []
+  declarations: [
+
+    CadastrarRevendedoresComponent
+  ]
 })
 export class RevendedoresModule { }

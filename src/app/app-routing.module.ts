@@ -1,20 +1,20 @@
-import { NgModule } from '@angular/core';
+
+
+
+import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { RevendedoresComponent } from './revendedores/revendedores.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+
+import { CadastrarRevendedoresComponent } from './revendedores/cad-revendedores/cadastrar-revendedores.component';
 
 const appRouters: Routes = [
-    { path: '', component: RevendedoresComponent},
-    //{ path: 'login', component: LoginComponent},
+    { path: '', component:  HomeComponent},
+    { path: 'login', component: LoginComponent },
+    { path: 'revendedores', component: CadastrarRevendedoresComponent }
+
     //{ path: 'naoEncontrado', component: NaoEncontradoComponent}
 ];
 
-@NgModule({
-
-    imports:
-    [
-        RouterModule.forRoot(appRouters)
-    ],
-    exports:[RouterModule]
-})
-export class AppRoutingModule {}
+export const routing: ModuleWithProviders = RouterModule.forRoot(appRouters);

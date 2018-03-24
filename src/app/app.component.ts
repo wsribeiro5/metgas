@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   ngOnInit() {
-    this.get_location();
+    //this.get_location();
   }
 
   get_location() {

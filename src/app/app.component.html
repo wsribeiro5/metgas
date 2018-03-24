@@ -1,4 +1,18 @@
-<ul materialize="collapsible" class="collapsible" data-collapsible="accordion">
+<nav>
+  <div class="nav-wrapper">
+    <a routerLink="" class="brand-logo left">MetGaz</a>
+    <ul class="right">
+      <li><a routerLink="" >Home</a></li>
+      <li><a routerLink="login">Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+<!--ul materialize="collapsible" class="collapsible" data-collapsible="accordion">
     <li>
       <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
       <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
@@ -13,7 +27,8 @@
     </li>
   </ul>
 
-  <button class="btn" (click)="get_location()">Qual é a minha localização?</button>
+  <button-- class="btn" (click)="get_location()">Qual é a minha localização?</button-->
+
 
 
 
