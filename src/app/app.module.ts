@@ -10,12 +10,14 @@ import { RevendedoresModule } from './revendedores/revendedores.module';
 
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { PrincipalComponent } from './Principal/principal/principal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    PrincipalComponent
 
   ],
   imports: [

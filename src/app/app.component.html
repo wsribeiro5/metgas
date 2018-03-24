@@ -1,12 +1,18 @@
-<nav>
-  <div class="nav-wrapper">
-    <a routerLink="" class="brand-logo left">MetGaz</a>
-    <ul class="right">
-      <li><a routerLink="" >Home</a></li>
-      <li><a routerLink="login">Login</a></li>
-    </ul>
-  </div>
-</nav>
+
+  <nav>
+    <div class="nav-wrapper">
+      <a routerLink="home" class="brand-logo left">MetGaz</a>
+      <ul class="right">
+        <li><a routerLinkActive="active" routerLink="home" >Home</a></li>
+        <li><a routerLinkActive="active" routerLink="login">Login</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+
+
+
 
 <div class="container">
   <router-outlet></router-outlet>
