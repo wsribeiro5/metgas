@@ -6,7 +6,6 @@ import { NgModule } from '@angular/core';
 import { routing } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { RevendedoresModule } from './revendedores/revendedores.module';
 
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
@@ -22,7 +21,6 @@ import { PrincipalComponent } from './Principal/principal/principal.component';
   ],
   imports: [
     BrowserModule,
-    RevendedoresModule,
     routing
   ],
   providers: [],
