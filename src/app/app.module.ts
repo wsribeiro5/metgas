@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
-import { PrincipalComponent } from './Principal/principal/principal.component';
+import { PrincipalComponent } from './Principal/principal.component';
 
 @NgModule({
   declarations: [
