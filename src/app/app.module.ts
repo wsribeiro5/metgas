@@ -22,7 +22,7 @@ import { LoginModule } from './login/login.module';
     AppComponent,
     HomeComponent,
     PrincipalComponent,
-    ListarRevendedoresComponent,
+    //ListarRevendedoresComponent,
     CadRevendedoresComponent
 
   ],
