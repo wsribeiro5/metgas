@@ -1,20 +1,22 @@
 
-
 import { NgModule } from '@angular/core';
+import { Http, HttpModule } from '@angular/http';
 import { FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { routing } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { LoginComponent } from './login/login.component';
+
 import { HomeComponent } from './home/home.component';
 import { PrincipalComponent } from './Principal/principal.component';
 //import { ListarRevendedoresComponent } from './revendedores/listar/listar-revendedores.component';
 import { CadRevendedoresComponent } from './Revendedores/cad-revendedores/cad-revendedores.component';
 
-import { LoginService } from './login/login.service';
-import { LoginModule } from './login/login.module';
+
+
+//import { CadClienteComponent } from './clientes/cad-cliente/cad-cliente.component';
+import { FormDebugComponent } from './shared/form-debug/form-debug.component';
 
 
 @NgModule({
@@ -22,16 +24,18 @@ import { LoginModule } from './login/login.module';
     AppComponent,
     HomeComponent,
     PrincipalComponent,
-    //ListarRevendedoresComponent,
-    CadRevendedoresComponent
-
+    CadRevendedoresComponent,
+    //CadClienteComponent,
+    FormDebugComponent
   ],
   imports: [
+    HttpModule,
     BrowserModule,
     routing,
-    LoginModule
+    //LoginModule,
+    ReactiveFormsModule
   ],
-  providers: [LoginService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
